@@ -1,0 +1,177 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    font-size: 16px;
+}
+
+.full-page {
+    width: 100%;
+    padding: 20% 0;
+}
+
+.bg-red {
+    background: #A20021;
+}
+
+.header-container {
+    position: relative;
+    text-align: center;
+    top: 30%;
+}
+
+.header {
+    color: #EDEDF4;
+    font-size: 52px;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    margin: 0 35%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #EDEDF4;
+}
+
+.subheader {
+    color: white;
+    font-size: 24px;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.profile-header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 15%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #A20021;
+}
+
+.profile-header {
+    color: #A20021;
+    margin: 20px 0;
+    font-size: 36px;
+    letter-spacing: .2rem;
+}
+
+.profile-description-container {
+    margin: 150px 0;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.profile-description-about-me {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    overflow-wrap: break-word;
+}
+
+.profile-description-header {
+    color: #F79D5C;
+    font-size: 20px;
+    margin: 10px 0;
+    align-self: center;
+}
+
+.profile-description-image {
+    width: 20%;
+}
+
+.profile-description-image > img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.profile-description-details {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    overflow-wrap: break-word;
+    gap: 15px;
+}
+
+.about-me-text {
+    text-align: justify;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.experiences-container {
+    display: flex;
+    flex-direction: column;
+    background: #F79D5C;
+    gap: 30px;
+    padding: 50px;
+}
+
+.experiences-container-header {
+    margin: 20px 0;
+    font-size: 36px;
+    letter-spacing: .2rem;
+    color: white;
+    align-self: center;
+    padding: 0 40px 5px 40px;
+    border-bottom: 1px solid white;
+}
+
+.experiences-sub-container {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 150px;
+}
+
+.experiences-sub-container-header {
+    color: white;
+    font-size: 28px;
+}
+
+.experience {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    row-gap: 30px;
+}
+
+.experience-label {
+    color: #A20021;
+    font-size: 24px;
+}
+
+.experience-value {
+    color: #A20021;
+    font-size: 24px;
+}
+
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.profile-description-container:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.profile-description-container:nth-child(3) {
+    transition-delay: 400ms;
+}
